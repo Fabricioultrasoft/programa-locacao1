@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NOVAOPCAODBDataSet5" targetNamespace="http://tempuri.org/NOVAOPCAODBDataSet5.xsd" xmlns:mstns="http://tempuri.org/NOVAOPCAODBDataSet5.xsd" xmlns="http://tempuri.org/NOVAOPCAODBDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="NOVAOPCAODBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="NOVAOPCAODBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.NovaOpcao.Properties.Settings.GlobalReference.Default.NOVAOPCAODBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PRODUTOSTableAdapter" GeneratorDataComponentClassName="PRODUTOSTableAdapter" Name="PRODUTOS" UserDataComponentName="PRODUTOSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NOVAOPCAODBConnectionString (Settings)" DbObjectName="NOVAOPCAODB.dbo.PRODUTOS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT QUANTIDADE FROM dbo.PRODUTOS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="QUANTIDADE" DataSetColumn="QUANTIDADE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="NOVAOPCAODBDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NOVAOPCAODBDataSet5" msprop:Generator_UserDSName="NOVAOPCAODBDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PRODUTOS" msprop:Generator_TableClassName="PRODUTOSDataTable" msprop:Generator_TableVarName="tablePRODUTOS" msprop:Generator_TablePropName="PRODUTOS" msprop:Generator_RowDeletingName="PRODUTOSRowDeleting" msprop:Generator_UserTableName="PRODUTOS" msprop:Generator_RowChangingName="PRODUTOSRowChanging" msprop:Generator_RowEvHandlerName="PRODUTOSRowChangeEventHandler" msprop:Generator_RowDeletedName="PRODUTOSRowDeleted" msprop:Generator_RowEvArgName="PRODUTOSRowChangeEvent" msprop:Generator_RowChangedName="PRODUTOSRowChanged" msprop:Generator_RowClassName="PRODUTOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QUANTIDADE" msprop:Generator_ColumnVarNameInTable="columnQUANTIDADE" msprop:Generator_ColumnPropNameInRow="QUANTIDADE" msprop:Generator_ColumnPropNameInTable="QUANTIDADEColumn" msprop:Generator_UserColumnName="QUANTIDADE" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
