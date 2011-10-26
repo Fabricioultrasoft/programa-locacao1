@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C6E3FEC-7CBC-42EA-A21B-2FB9A08391F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NovaOpcao</RootNamespace>
+    <AssemblyName>NovaOpcao</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Documents and Settings\a506602\Desktop\nOVAOPÇÃO\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C0DE79C9C8B3B56B2309D6218DEA733D37A0023C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NovaOpcao_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Synchronization, Version=1.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.Server, Version=2.0.0.0" />
+    <Reference Include="Microsoft.Synchronization.Data.SqlServerCe, Version=2.0.0.0" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuscaProdutos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuscaProdutos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexao.cs" />
+    <Compile Include="DetalhePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalhePedido.Designer.cs">
+      <DependentUpon>DetalhePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalhesPedido.cs">
+      <DependentUpon>DetalhesPedido.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DetalhesPedido.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DetalhesPedido.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque.Designer.cs">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GerenciaFornecedor.Designer.cs">
+      <DependentUpon>GerenciaFornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor.Designer.cs">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIni.Designer.cs">
+      <DependentUpon>FrmIni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inserir.cs" />
+    <Compile Include="Locacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locacao.Designer.cs">
+      <DependentUpon>Locacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NOVAOPCAODBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NOVAOPCAODBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorio_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio_Produto.Designer.cs">
+      <DependentUpon>Relatorio_Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RetornaNome.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RetornaNome.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sobre.Designer.cs">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalhePedido.resx">
+      <DependentUpon>DetalhePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque.resx">
+      <DependentUpon>Estoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GerenciaFornecedor.resx">
+      <DependentUpon>GerenciaFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor.resx">
+      <DependentUpon>Fornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIni.resx">
+      <DependentUpon>FrmIni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locacao.resx">
+      <DependentUpon>Locacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorio_Produto.resx">
+      <DependentUpon>Relatorio_Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sobre.resx">
+      <DependentUpon>Sobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BuscaProdutos.xsc">
+      <DependentUpon>BuscaProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="BuscaProdutos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BuscaProdutos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BuscaProdutos.xss">
+      <DependentUpon>BuscaProdutos.xsd</DependentUpon>
+    </None>
+    <None Include="DetalhesPedido.xsc">
+      <DependentUpon>DetalhesPedido.xsd</DependentUpon>
+    </None>
+    <None Include="DetalhesPedido.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DetalhesPedido.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DetalhesPedido.xss">
+      <DependentUpon>DetalhesPedido.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet.xss">
+      <DependentUpon>NOVAOPCAODBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet1.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet1.xss">
+      <DependentUpon>NOVAOPCAODBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet2.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet2.xss">
+      <DependentUpon>NOVAOPCAODBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet3.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet3.xss">
+      <DependentUpon>NOVAOPCAODBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet4.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet4.xss">
+      <DependentUpon>NOVAOPCAODBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet5.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet5.xss">
+      <DependentUpon>NOVAOPCAODBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet6.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet6.xss">
+      <DependentUpon>NOVAOPCAODBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet7.xsc">
+      <DependentUpon>NOVAOPCAODBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="NOVAOPCAODBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NOVAOPCAODBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NOVAOPCAODBDataSet7.xss">
+      <DependentUpon>NOVAOPCAODBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="NovaOpcao_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\Estoque.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RetornaNome.xsc">
+      <DependentUpon>RetornaNome.xsd</DependentUpon>
+    </None>
+    <None Include="RetornaNome.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RetornaNome.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RetornaNome.xss">
+      <DependentUpon>RetornaNome.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logo-nova.jpg" />
+    <Content Include="NOVAOPCAODB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
