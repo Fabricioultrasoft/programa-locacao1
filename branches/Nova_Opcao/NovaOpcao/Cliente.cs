@@ -76,5 +76,11 @@ namespace NovaOpcao
         {
             Cliente.ActiveForm.Close();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RelatorioClientesFRM rlCL = new RelatorioClientesFRM();
+            rlCL.Show();
+        }
     }
 }
