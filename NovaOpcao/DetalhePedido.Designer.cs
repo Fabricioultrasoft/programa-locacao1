@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetalhePedido));
             this.label4 = new System.Windows.Forms.Label();
             this.DetalhesPedido = new System.Windows.Forms.DataGridView();
             this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -267,8 +268,12 @@
             this.Controls.Add(this.DataFiltro);
             this.Controls.Add(this.DetalhesPedido);
             this.Controls.Add(this.label4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DetalhePedido";
-            this.Text = "DetalhePedido";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Detalhes dos Pedidos";
             this.Load += new System.EventHandler(this.fillDADOSToolStripButton1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.DetalhesPedido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hISTORICOBindingSource2)).EndInit();

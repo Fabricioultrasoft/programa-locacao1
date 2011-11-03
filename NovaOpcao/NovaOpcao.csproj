@@ -121,12 +121,6 @@
     <Compile Include="Estoque.Designer.cs">
       <DependentUpon>Estoque.cs</DependentUpon>
     </Compile>
-    <Compile Include="GerenciaFornecedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GerenciaFornecedor.Designer.cs">
-      <DependentUpon>GerenciaFornecedor.cs</DependentUpon>
-    </Compile>
     <Compile Include="Fornecedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,9 +218,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque.resx">
       <DependentUpon>Estoque.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GerenciaFornecedor.resx">
-      <DependentUpon>GerenciaFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fornecedor.resx">
       <DependentUpon>Fornecedor.cs</DependentUpon>
@@ -416,6 +407,27 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>NOVAOPCAODB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\application_cascade.png" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\lorry.png" />
+    <None Include="Resources\user_green.png" />
+    <None Include="Resources\user_gray.png" />
+    <None Include="Resources\report.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\chart_bar.png" />
+    <None Include="Resources\user_add.png" />
+    <None Include="Resources\building_add.png" />
+    <None Include="Resources\building_edit.png" />
+    <None Include="Resources\book_edit.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\building.png" />
+    <None Include="Resources\cart.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\book_add.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
