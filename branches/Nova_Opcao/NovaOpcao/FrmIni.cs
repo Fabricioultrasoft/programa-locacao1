@@ -119,11 +119,6 @@ namespace NovaOpcao
             DtPedid.Show();
         }
 
-        private void gerenciarFornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            GerenciaFornecedor gf = new GerenciaFornecedor();
-            gf.Show();
-        }
 
         private void btlocar_Click(object sender, EventArgs e)
         {
@@ -147,6 +142,12 @@ namespace NovaOpcao
         {
             Fornecedor fc = new Fornecedor();
             fc.Show();
+        }
+
+        private void cadastrarProdutosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Estoque est = new Estoque();
+            est.Show();
         }
 
 
