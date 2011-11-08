@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace NovaOpcao
 {
     public partial class FrmIni : Form
     {
+        int cont;
+
         public FrmIni()
         {
           
@@ -69,7 +73,7 @@ namespace NovaOpcao
 
         private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Relatorio_Produto rl = new Relatorio_Produto();
+            RelatorioFornecedor rl = new RelatorioFornecedor();
             rl.Show();
         }
 
@@ -150,11 +154,53 @@ namespace NovaOpcao
             est.Show();
         }
 
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            progresso.Maximum = 100;
+            progresso.Minimum = 0;
+            cont = 0;
+
+            RelatorioClientesFRM rltCLT = new RelatorioClientesFRM();
+            rltCLT.Show();
+            Thread prg = new Thread(barraProgresso);
+
+            prg.Start();
+            
+            
+
+        }
+
+   
+
+       void barraProgresso()
+        {
+            
+           
+            
+            while (cont <= 100)
+            {
+
+                progresso.Step = cont;
+                progresso.PerformStep();
+                cont++;
+            }
+
+         
+
+        }
 
 
-       
 
 
+
+        public ThreadStart barraProgreso { get; set; }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GerenciaEMAIL grEmail = new GerenciaEMAIL();
+            grEmail.Show();
+        }
     }
 
 }
