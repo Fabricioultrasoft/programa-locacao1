@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovaOpcao", "NovaOpcao\NovaOpcao.csproj", "{6C6E3FEC-7CBC-42EA-A21B-2FB9A08391F3}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Instalador NovaOpção", "Instalador NovaOpção\Instalador NovaOpção.vdproj", "{119D8EA3-6888-40ED-A4F1-217E827288AC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup2", "Setup2\Setup2.vdproj", "{608E32E1-BD23-4E19-840C-BD38A637BD1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +17,10 @@ Global
 		{6C6E3FEC-7CBC-42EA-A21B-2FB9A08391F3}.Debug|x86.Build.0 = Debug|x86
 		{6C6E3FEC-7CBC-42EA-A21B-2FB9A08391F3}.Release|x86.ActiveCfg = Release|x86
 		{6C6E3FEC-7CBC-42EA-A21B-2FB9A08391F3}.Release|x86.Build.0 = Release|x86
+		{119D8EA3-6888-40ED-A4F1-217E827288AC}.Debug|x86.ActiveCfg = Debug
+		{119D8EA3-6888-40ED-A4F1-217E827288AC}.Release|x86.ActiveCfg = Release
+		{608E32E1-BD23-4E19-840C-BD38A637BD1F}.Debug|x86.ActiveCfg = Debug
+		{608E32E1-BD23-4E19-840C-BD38A637BD1F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
