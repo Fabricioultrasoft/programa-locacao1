@@ -163,9 +163,8 @@ namespace NovaOpcao
 
             RelatorioClientesFRM rltCLT = new RelatorioClientesFRM();
             rltCLT.Show();
-            Thread prg = new Thread(barraProgresso);
+            
 
-            prg.Start();
             
             
 
@@ -173,33 +172,18 @@ namespace NovaOpcao
 
    
 
-       void barraProgresso()
-        {
-            
-           
-            
-            while (cont <= 100)
-            {
-
-                progresso.Step = cont;
-                progresso.PerformStep();
-                cont++;
-            }
-
-         
-
-        }
-
-
-
-
-
-        public ThreadStart barraProgreso { get; set; }
+              
 
         private void button1_Click(object sender, EventArgs e)
         {
             GerenciaEMAIL grEmail = new GerenciaEMAIL();
             grEmail.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Orcamento orc = new Orcamento();
+            orc.Show();
         }
     }
 

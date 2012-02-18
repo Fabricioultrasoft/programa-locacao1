@@ -57,6 +57,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.DadosHistorico = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btfornecedor = new System.Windows.Forms.Button();
             this.btnovocliente = new System.Windows.Forms.Button();
             this.btnovoproduto = new System.Windows.Forms.Button();
@@ -66,7 +68,6 @@
             this.PRODUTOSTableAdapter = new NovaOpcao.NOVAOPCAODBDataSetTableAdapters.PRODUTOSTableAdapter();
             this.button5 = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,7 +83,7 @@
             this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(811, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(927, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,7 +98,7 @@
             this.saiToolStripMenuItem});
             this.gerenciarToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.chart_bar;
             this.gerenciarToolStripMenuItem.Name = "gerenciarToolStripMenuItem";
-            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.gerenciarToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.gerenciarToolStripMenuItem.Text = "Gerenciar";
             // 
             // estoqueToolStripMenuItem
@@ -107,14 +108,14 @@
             this.cadastrarProdutosToolStripMenuItem});
             this.estoqueToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.book;
             this.estoqueToolStripMenuItem.Name = "estoqueToolStripMenuItem";
-            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.estoqueToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.estoqueToolStripMenuItem.Text = "Estoque";
             // 
             // entradasToolStripMenuItem
             // 
             this.entradasToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.book_edit;
             this.entradasToolStripMenuItem.Name = "entradasToolStripMenuItem";
-            this.entradasToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.entradasToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.entradasToolStripMenuItem.Text = "Gerenciar Estoque";
             this.entradasToolStripMenuItem.Click += new System.EventHandler(this.entradasToolStripMenuItem_Click);
             // 
@@ -122,7 +123,7 @@
             // 
             this.cadastrarProdutosToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.book_add;
             this.cadastrarProdutosToolStripMenuItem.Name = "cadastrarProdutosToolStripMenuItem";
-            this.cadastrarProdutosToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.cadastrarProdutosToolStripMenuItem.Size = new System.Drawing.Size(175, 22);
             this.cadastrarProdutosToolStripMenuItem.Text = "Cadastrar Produtos";
             this.cadastrarProdutosToolStripMenuItem.Click += new System.EventHandler(this.cadastrarProdutosToolStripMenuItem_Click);
             // 
@@ -133,21 +134,21 @@
             this.novoFornecedorToolStripMenuItem});
             this.fornecedorToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.building;
             this.fornecedorToolStripMenuItem.Name = "fornecedorToolStripMenuItem";
-            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.fornecedorToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.fornecedorToolStripMenuItem.Text = "Fornecedor";
             // 
             // gerenciarFornecedoresToolStripMenuItem
             // 
             this.gerenciarFornecedoresToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.building_edit;
             this.gerenciarFornecedoresToolStripMenuItem.Name = "gerenciarFornecedoresToolStripMenuItem";
-            this.gerenciarFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.gerenciarFornecedoresToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.gerenciarFornecedoresToolStripMenuItem.Text = "Gerenciar Fornecedores";
             // 
             // novoFornecedorToolStripMenuItem
             // 
             this.novoFornecedorToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.building_add;
             this.novoFornecedorToolStripMenuItem.Name = "novoFornecedorToolStripMenuItem";
-            this.novoFornecedorToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.novoFornecedorToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.novoFornecedorToolStripMenuItem.Text = "Novo Fornecedor";
             this.novoFornecedorToolStripMenuItem.Click += new System.EventHandler(this.novoFornecedorToolStripMenuItem_Click);
             // 
@@ -155,7 +156,7 @@
             // 
             this.toolStripMenuItem3.Image = global::NovaOpcao.Properties.Resources.cart;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(140, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(134, 22);
             this.toolStripMenuItem3.Text = "Alugar";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -165,27 +166,27 @@
             this.novoClienteToolStripMenuItem});
             this.clienteToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.user;
             this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.clienteToolStripMenuItem.Text = "Cliente";
             // 
             // novoClienteToolStripMenuItem
             // 
             this.novoClienteToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.user_add;
             this.novoClienteToolStripMenuItem.Name = "novoClienteToolStripMenuItem";
-            this.novoClienteToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.novoClienteToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.novoClienteToolStripMenuItem.Text = "Novo Cliente";
             this.novoClienteToolStripMenuItem.Click += new System.EventHandler(this.novoClienteToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(137, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(131, 6);
             // 
             // saiToolStripMenuItem
             // 
             this.saiToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.cancel;
             this.saiToolStripMenuItem.Name = "saiToolStripMenuItem";
-            this.saiToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.saiToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.saiToolStripMenuItem.Text = "&Sair";
             this.saiToolStripMenuItem.Click += new System.EventHandler(this.saiToolStripMenuItem_Click);
             // 
@@ -197,14 +198,14 @@
             this.pedidosToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.report;
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
-            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(83, 20);
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.user_gray;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -212,7 +213,7 @@
             // 
             this.fornecedoresToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.lorry;
             this.fornecedoresToolStripMenuItem.Name = "fornecedoresToolStripMenuItem";
-            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.fornecedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.fornecedoresToolStripMenuItem.Text = "Fornecedores";
             this.fornecedoresToolStripMenuItem.Click += new System.EventHandler(this.fornecedoresToolStripMenuItem_Click);
             // 
@@ -220,7 +221,7 @@
             // 
             this.pedidosToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.email;
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             // 
             // ajudaToolStripMenuItem
@@ -231,27 +232,27 @@
             this.versaoToolStripMenuItem});
             this.ajudaToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.help;
             this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
-            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.ajudaToolStripMenuItem.Text = "Ajuda";
             // 
             // sobreOProgramaToolStripMenuItem
             // 
             this.sobreOProgramaToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.application_cascade;
             this.sobreOProgramaToolStripMenuItem.Name = "sobreOProgramaToolStripMenuItem";
-            this.sobreOProgramaToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.sobreOProgramaToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.sobreOProgramaToolStripMenuItem.Text = "Sobre o Programa";
             this.sobreOProgramaToolStripMenuItem.Click += new System.EventHandler(this.sobreOProgramaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(166, 6);
             // 
             // versaoToolStripMenuItem
             // 
             this.versaoToolStripMenuItem.Image = global::NovaOpcao.Properties.Resources.key;
             this.versaoToolStripMenuItem.Name = "versaoToolStripMenuItem";
-            this.versaoToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.versaoToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
             this.versaoToolStripMenuItem.Text = "Versão";
             // 
             // statusStrip1
@@ -260,7 +261,7 @@
             this.progresso});
             this.statusStrip1.Location = new System.Drawing.Point(0, 392);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(811, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(927, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -283,7 +284,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(220, 52);
+            this.label1.Location = new System.Drawing.Point(300, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 3;
@@ -295,7 +296,7 @@
             this.DadosHistorico.FormattingEnabled = true;
             this.DadosHistorico.HorizontalExtent = 2;
             this.DadosHistorico.HorizontalScrollbar = true;
-            this.DadosHistorico.Location = new System.Drawing.Point(223, 86);
+            this.DadosHistorico.Location = new System.Drawing.Point(303, 93);
             this.DadosHistorico.MultiColumn = true;
             this.DadosHistorico.Name = "DadosHistorico";
             this.DadosHistorico.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -305,6 +306,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btfornecedor);
             this.groupBox1.Controls.Add(this.btnovocliente);
@@ -317,6 +319,27 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eventos Comuns:";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button2.Location = new System.Drawing.Point(285, 94);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(106, 39);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Orçamento";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(285, 36);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 39);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Enviar E-mail";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btfornecedor
             // 
@@ -374,7 +397,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(685, 213);
+            this.button5.Location = new System.Drawing.Point(765, 220);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(111, 23);
             this.button5.TabIndex = 6;
@@ -382,21 +405,11 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(285, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 39);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Enviar E-mail";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmIni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 414);
+            this.ClientSize = new System.Drawing.Size(927, 414);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.DadosHistorico);
@@ -463,6 +476,7 @@
         private System.Windows.Forms.ToolStripMenuItem entradasToolStripMenuItem;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
   
     }
 }
