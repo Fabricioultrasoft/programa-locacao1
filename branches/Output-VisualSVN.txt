@@ -1,0 +1,1 @@
+﻿Can't open file 'C:\Users\Jhonny Black\Documents\Visual Studio 2010\Projects\LocacaoNovaVersao\LocacaoNovaVersao\LocacaoPrincipalDB_log.ldf': O arquivo já está sendo usado por outro processo.  

@@ -15,5 +15,21 @@ namespace LocacaoNovaVersao
         {
             InitializeComponent();
         }
+
+        private void produtoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.produtoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.locacaoPrincipalDBDataSet);
+
+        }
+
+        private void produtoBindingNavigatorSaveItem_Click_1(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.produtoBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.locacaoPrincipalDBDataSet);
+
+        }
     }
 }
