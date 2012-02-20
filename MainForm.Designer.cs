@@ -74,10 +74,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textnome = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.contadorLetras = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.Observacao = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -85,21 +87,21 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.labelLucro = new System.Windows.Forms.Label();
+            this.labelVenda = new System.Windows.Forms.Label();
+            this.labelCusto = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textVenda = new System.Windows.Forms.TextBox();
+            this.textCusto = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateCadastro = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textQuantidade = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textProduto = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
@@ -571,22 +573,24 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.contadorLetras);
+            this.tabPage3.Controls.Add(this.label28);
             this.tabPage3.Controls.Add(this.checkBox1);
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.textBox16);
+            this.tabPage3.Controls.Add(this.Observacao);
             this.tabPage3.Controls.Add(this.label33);
             this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Controls.Add(this.panel1);
             this.tabPage3.Controls.Add(this.label24);
-            this.tabPage3.Controls.Add(this.textBox13);
-            this.tabPage3.Controls.Add(this.textBox12);
+            this.tabPage3.Controls.Add(this.textVenda);
+            this.tabPage3.Controls.Add(this.textCusto);
             this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.dateTimePicker2);
+            this.tabPage3.Controls.Add(this.dateCadastro);
             this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Controls.Add(this.textBox11);
+            this.tabPage3.Controls.Add(this.textQuantidade);
             this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.textBox10);
+            this.tabPage3.Controls.Add(this.textProduto);
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -595,6 +599,24 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Cadastro de Produtos";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // contadorLetras
+            // 
+            this.contadorLetras.AutoSize = true;
+            this.contadorLetras.Location = new System.Drawing.Point(609, 61);
+            this.contadorLetras.Name = "contadorLetras";
+            this.contadorLetras.Size = new System.Drawing.Size(13, 13);
+            this.contadorLetras.TabIndex = 18;
+            this.contadorLetras.Text = "0";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(672, 61);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(60, 13);
+            this.label28.TabIndex = 17;
+            this.label28.Text = "caracteres.";
             // 
             // checkBox1
             // 
@@ -624,13 +646,14 @@
             this.button3.Text = "Cadastrar Produto";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // textBox16
+            // Observacao
             // 
-            this.textBox16.Location = new System.Drawing.Point(609, 77);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(448, 145);
-            this.textBox16.TabIndex = 13;
+            this.Observacao.Location = new System.Drawing.Point(609, 77);
+            this.Observacao.Multiline = true;
+            this.Observacao.Name = "Observacao";
+            this.Observacao.Size = new System.Drawing.Size(448, 145);
+            this.Observacao.TabIndex = 13;
+            this.Observacao.TextChanged += new System.EventHandler(this.Observacao_TextChanged);
             // 
             // label33
             // 
@@ -659,6 +682,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(112, 20);
             this.textBox15.TabIndex = 14;
+            this.textBox15.Text = "0";
             // 
             // textBox14
             // 
@@ -666,6 +690,7 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(112, 20);
             this.textBox14.TabIndex = 12;
+            this.textBox14.Text = "0";
             // 
             // label32
             // 
@@ -688,9 +713,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.label30);
-            this.panel1.Controls.Add(this.label29);
-            this.panel1.Controls.Add(this.label28);
+            this.panel1.Controls.Add(this.labelLucro);
+            this.panel1.Controls.Add(this.labelVenda);
+            this.panel1.Controls.Add(this.labelCusto);
             this.panel1.Controls.Add(this.label27);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.label25);
@@ -699,38 +724,38 @@
             this.panel1.Size = new System.Drawing.Size(283, 100);
             this.panel1.TabIndex = 10;
             // 
-            // label30
+            // labelLucro
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.Red;
-            this.label30.Location = new System.Drawing.Point(160, 80);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(32, 13);
-            this.label30.TabIndex = 5;
-            this.label30.Text = "0,00";
+            this.labelLucro.AutoSize = true;
+            this.labelLucro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLucro.ForeColor = System.Drawing.Color.Red;
+            this.labelLucro.Location = new System.Drawing.Point(160, 80);
+            this.labelLucro.Name = "labelLucro";
+            this.labelLucro.Size = new System.Drawing.Size(32, 13);
+            this.labelLucro.TabIndex = 5;
+            this.labelLucro.Text = "0,00";
             // 
-            // label29
+            // labelVenda
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.Red;
-            this.label29.Location = new System.Drawing.Point(160, 44);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(32, 13);
-            this.label29.TabIndex = 4;
-            this.label29.Text = "0,00";
+            this.labelVenda.AutoSize = true;
+            this.labelVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVenda.ForeColor = System.Drawing.Color.Red;
+            this.labelVenda.Location = new System.Drawing.Point(160, 44);
+            this.labelVenda.Name = "labelVenda";
+            this.labelVenda.Size = new System.Drawing.Size(32, 13);
+            this.labelVenda.TabIndex = 4;
+            this.labelVenda.Text = "0,00";
             // 
-            // label28
+            // labelCusto
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.Red;
-            this.label28.Location = new System.Drawing.Point(160, 7);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(32, 13);
-            this.label28.TabIndex = 3;
-            this.label28.Text = "0,00";
+            this.labelCusto.AutoSize = true;
+            this.labelCusto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCusto.ForeColor = System.Drawing.Color.Red;
+            this.labelCusto.Location = new System.Drawing.Point(160, 7);
+            this.labelCusto.Name = "labelCusto";
+            this.labelCusto.Size = new System.Drawing.Size(32, 13);
+            this.labelCusto.TabIndex = 3;
+            this.labelCusto.Text = "0,00";
             // 
             // label27
             // 
@@ -764,23 +789,27 @@
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(15, 209);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(68, 13);
+            this.label24.Size = new System.Drawing.Size(72, 13);
             this.label24.TabIndex = 9;
-            this.label24.Text = "Preço Custo:";
+            this.label24.Text = "Preço Venda:";
             // 
-            // textBox13
+            // textVenda
             // 
-            this.textBox13.Location = new System.Drawing.Point(92, 202);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(109, 20);
-            this.textBox13.TabIndex = 8;
+            this.textVenda.Location = new System.Drawing.Point(92, 202);
+            this.textVenda.Name = "textVenda";
+            this.textVenda.Size = new System.Drawing.Size(109, 20);
+            this.textVenda.TabIndex = 8;
+            this.textVenda.Text = "0,00";
+            this.textVenda.TextChanged += new System.EventHandler(this.textVenda_TextChanged);
             // 
-            // textBox12
+            // textCusto
             // 
-            this.textBox12.Location = new System.Drawing.Point(89, 163);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(112, 20);
-            this.textBox12.TabIndex = 7;
+            this.textCusto.Location = new System.Drawing.Point(89, 163);
+            this.textCusto.Name = "textCusto";
+            this.textCusto.Size = new System.Drawing.Size(112, 20);
+            this.textCusto.TabIndex = 7;
+            this.textCusto.Text = "0,00";
+            this.textCusto.TextChanged += new System.EventHandler(this.textCusto_TextChanged);
             // 
             // label23
             // 
@@ -791,13 +820,14 @@
             this.label23.TabIndex = 6;
             this.label23.Text = "Preço Custo:";
             // 
-            // dateTimePicker2
+            // dateCadastro
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(334, 81);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 5;
+            this.dateCadastro.Enabled = false;
+            this.dateCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateCadastro.Location = new System.Drawing.Point(334, 81);
+            this.dateCadastro.Name = "dateCadastro";
+            this.dateCadastro.Size = new System.Drawing.Size(200, 20);
+            this.dateCadastro.TabIndex = 5;
             // 
             // label22
             // 
@@ -808,28 +838,30 @@
             this.label22.TabIndex = 4;
             this.label22.Text = "Data de Cadastro:";
             // 
-            // textBox11
+            // textQuantidade
             // 
-            this.textBox11.Location = new System.Drawing.Point(89, 122);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(112, 20);
-            this.textBox11.TabIndex = 3;
+            this.textQuantidade.Location = new System.Drawing.Point(89, 122);
+            this.textQuantidade.Name = "textQuantidade";
+            this.textQuantidade.Size = new System.Drawing.Size(112, 20);
+            this.textQuantidade.TabIndex = 3;
+            this.textQuantidade.Text = "0";
+            this.textQuantidade.TextChanged += new System.EventHandler(this.textQuantidade_TextChanged);
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(15, 122);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 13);
+            this.label21.Size = new System.Drawing.Size(65, 13);
             this.label21.TabIndex = 2;
-            this.label21.Text = "Unidade:";
+            this.label21.Text = "Quantidade:";
             // 
-            // textBox10
+            // textProduto
             // 
-            this.textBox10.Location = new System.Drawing.Point(86, 30);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(448, 20);
-            this.textBox10.TabIndex = 1;
+            this.textProduto.Location = new System.Drawing.Point(86, 30);
+            this.textProduto.Name = "textProduto";
+            this.textProduto.Size = new System.Drawing.Size(448, 20);
+            this.textProduto.TabIndex = 1;
             // 
             // label20
             // 
@@ -1177,7 +1209,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox Observacao;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBox15;
@@ -1185,21 +1217,21 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label labelLucro;
+        private System.Windows.Forms.Label labelVenda;
+        private System.Windows.Forms.Label labelCusto;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textVenda;
+        private System.Windows.Forms.TextBox textCusto;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateCadastro;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textQuantidade;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textProduto;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -1226,6 +1258,8 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label contadorLetras;
+        private System.Windows.Forms.Label label28;
     }
 }
 
