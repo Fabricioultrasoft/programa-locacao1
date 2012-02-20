@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InteracaoBanco.cs" />
     <Compile Include="LocacaoPrincipalDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,7 +87,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="app.config" />
     <None Include="LocacaoPrincipalDBDataSet.xsc">
       <DependentUpon>LocacaoPrincipalDBDataSet.xsd</DependentUpon>
     </None>
