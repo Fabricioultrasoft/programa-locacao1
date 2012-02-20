@@ -32,8 +32,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.InserirFoto = new System.Windows.Forms.Button();
-            this.ImagemCliente = new System.Windows.Forms.PictureBox();
             this.dataAtual = new System.Windows.Forms.DateTimePicker();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -133,7 +131,6 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagemCliente)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -167,8 +164,6 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.button2);
-            this.tabPage2.Controls.Add(this.InserirFoto);
-            this.tabPage2.Controls.Add(this.ImagemCliente);
             this.tabPage2.Controls.Add(this.dataAtual);
             this.tabPage2.Controls.Add(this.label19);
             this.tabPage2.Controls.Add(this.label18);
@@ -226,27 +221,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // InserirFoto
-            // 
-            this.InserirFoto.Location = new System.Drawing.Point(753, 394);
-            this.InserirFoto.Name = "InserirFoto";
-            this.InserirFoto.Size = new System.Drawing.Size(125, 23);
-            this.InserirFoto.TabIndex = 56;
-            this.InserirFoto.Text = "Inserir Foto";
-            this.InserirFoto.UseVisualStyleBackColor = true;
-            this.InserirFoto.Click += new System.EventHandler(this.InserirFoto_Click);
-            // 
-            // ImagemCliente
-            // 
-            this.ImagemCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImagemCliente.Location = new System.Drawing.Point(753, 95);
-            this.ImagemCliente.Name = "ImagemCliente";
-            this.ImagemCliente.Size = new System.Drawing.Size(352, 277);
-            this.ImagemCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImagemCliente.TabIndex = 55;
-            this.ImagemCliente.TabStop = false;
-            this.ImagemCliente.WaitOnLoad = true;
-            // 
             // dataAtual
             // 
             this.dataAtual.CustomFormat = "";
@@ -300,6 +274,9 @@
             // comboUF
             // 
             this.comboUF.FormattingEnabled = true;
+            this.comboUF.Items.AddRange(new object[] {
+            "SP",
+            "RJ"});
             this.comboUF.Location = new System.Drawing.Point(411, 392);
             this.comboUF.Name = "comboUF";
             this.comboUF.Size = new System.Drawing.Size(265, 21);
@@ -1142,7 +1119,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImagemCliente)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1203,8 +1179,6 @@
         private System.Windows.Forms.TextBox textFoneCom;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textFoneRes;
-        private System.Windows.Forms.Button InserirFoto;
-        private System.Windows.Forms.PictureBox ImagemCliente;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button4;
