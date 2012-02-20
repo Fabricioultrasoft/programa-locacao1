@@ -26,36 +26,34 @@ namespace LocacaoNovaVersao
             string CNPJ = textCPF.Text;
             string FoneRes = textFoneRes.Text;
             string FoneCom = textFoneCom.Text;
+            string FoneCel = textCelular.Text;
             string Profissao = textProfissao.Text;
             string Observacao = textObservacao.Text;
             string Endereco = textEndereco.Text;
+            string Cidade = textCidade.Text;
             string Bairro = textBairro.Text;
             string CEP = textCEP.Text;
             string UF = comboUF.SelectedItem.ToString();
+            string Email = textemail.Text;
+            int Sexo;
 
             if (Masculino.Checked)
             {
                 //sexo = 0 significa status Masculino, sexo = 1 status feminino
-                int Sexo = 0;
+                Sexo = 0;
             }
             else
             {
-                int sexo = 1;
+                Sexo = 1;
 
             }
 
             DateTime DtCriacao = dataAtual.Value;
 
+            ManipularBanco.InserirCliente(Nome, Sobrenome, CPF, RG, CNPJ, FoneRes, FoneCom, FoneCel, Profissao, Observacao, Endereco,Cidade, Bairro,  CEP, UF, Sexo, Email, DtCriacao);
 
 
            
-        }
-
-        private void InserirFoto_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog abrirFoto = new OpenFileDialog();
-            abrirFoto.ShowDialog();
-            ImagemCliente.ImageLocation = abrirFoto.FileName;
         }
 
         private void textQuantidade_TextChanged(object sender, EventArgs e)
