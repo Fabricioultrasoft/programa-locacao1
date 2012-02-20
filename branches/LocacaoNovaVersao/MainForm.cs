@@ -58,5 +58,40 @@ namespace LocacaoNovaVersao
             ImagemCliente.ImageLocation = abrirFoto.FileName;
         }
 
+        private void textQuantidade_TextChanged(object sender, EventArgs e)
+        {
+            ChamadaAtualizacaoValores();
+            
+        }
+
+        private void textCusto_TextChanged(object sender, EventArgs e)
+        {
+            ChamadaAtualizacaoValores();
+            
+        }
+
+        private void textVenda_TextChanged(object sender, EventArgs e)
+        {
+            ChamadaAtualizacaoValores();
+        }
+
+        private void ChamadaAtualizacaoValores()
+        {
+            VerificaString verifica = new VerificaString();
+            verifica.VerificaValores(textQuantidade.Text, textCusto.Text, textVenda.Text);
+            labelCusto.Text = verifica.PrecoCusto.ToString();
+            labelVenda.Text = verifica.PrecoVenda.ToString();
+            labelLucro.Text = verifica.Lucro.ToString();
+
+        }
+
+
+        private void Observacao_TextChanged(object sender, EventArgs e)
+        {
+            contadorLetras.Text = Observacao.TextLength.ToString();
+        }
+        
+
+        
      }
 }
